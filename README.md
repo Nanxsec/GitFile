@@ -4,8 +4,7 @@
 
 # Sobre o script:
 
-git.py  é uma ferramenta feita para baixar arquivos e informações de repositórios Git expostos em servidores web.<br>
-Ela utiliza o conceito de fuzzing para acessar e explorar arquivos de um repositório Git, como .git/config, .git/HEAD, .git/index, entre outros, que podem revelar informações sensíveis, como configurações de repositório, logs de commit e até credenciais.<br>
+git.py  é uma ferramenta feita para baixar arquivos e informações de repositórios Git expostos em servidores web. Ela utiliza o conceito de fuzzing para acessar e explorar arquivos de um repositório Git, como .git/config, .git/HEAD, .git/index, entre outros, que podem revelar informações sensíveis, como configurações de repositório, logs de commit e até credenciais.<br>
 
 O objetivo desta ferramenta é auxiliar na avaliação de segurança, permitindo avaliar se repositórios Git estão sendo expostos sem devida proteção.
 
