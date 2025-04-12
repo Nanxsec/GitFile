@@ -48,5 +48,4 @@ Você pode personalizar a lista de arquivos Git e diretórios no script, depende
 
 # Fase de testes ainda:
 
-O script está em fase de testes mas já está funcionando normal. Se tiver alguma ideia de adição, você pode adicionar<br>
-ou me chame e me fale para que eu possa adicionar!
+O script está em fase de testes mas já está funcionando normal. Se tiver alguma ideia de adição, você pode adicionar ou me chame e me fale para que eu possa adicionar!
