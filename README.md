@@ -1,6 +1,11 @@
-# Sobre:
+# Fase de testes ainda:
 
-dumper.py  é uma ferramenta feita para baixar arquivos e informações de repositórios Git expostos em servidores web.<br>
+O script está em fase de testes mas já está funcionando normal. Se tiver alguma ideia de adição, você pode adicionar<br>
+ou me chame e me fale para que eu possa adicionar!
+
+# Sobre o script:
+
+git.py  é uma ferramenta feita para baixar arquivos e informações de repositórios Git expostos em servidores web.<br>
 Ela utiliza o conceito de fuzzing para acessar e explorar arquivos de um repositório Git, como .git/config, .git/HEAD, .git/index, entre outros, que podem revelar informações sensíveis, como configurações de repositório, logs de commit e até credenciais.<br>
 
 O objetivo desta ferramenta é auxiliar na avaliação de segurança, permitindo avaliar se repositórios Git estão sendo expostos sem devida proteção.
