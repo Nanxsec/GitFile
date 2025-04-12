@@ -1,7 +1,6 @@
-# Fase de testes ainda:
-
-O script está em fase de testes mas já está funcionando normal. Se tiver alguma ideia de adição, você pode adicionar<br>
-ou me chame e me fale para que eu possa adicionar!
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/687da9d2-9fff-40ee-8c66-af89c9fbcc01" width=600 height=400/>
+</div>
 
 # Sobre o script:
 
@@ -46,3 +45,8 @@ Você pode personalizar a lista de arquivos Git e diretórios no script, depende
     └── objects/
         └── info/
             └── packs
+
+# Fase de testes ainda:
+
+O script está em fase de testes mas já está funcionando normal. Se tiver alguma ideia de adição, você pode adicionar<br>
+ou me chame e me fale para que eu possa adicionar!
