@@ -18,12 +18,10 @@ print("""\033[31m
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# Função para baixar arquivos com verificação de diretórios
 def baixar_arquivo(url, caminho_destino):
     try:
         resposta = requests.get(url, timeout=10)
         if resposta.status_code == 200:
-            # Verificando se o arquivo não é um diretório
             if resposta.headers.get('Content-Type') and 'text/html' in resposta.headers['Content-Type']:
                 logger.warning(f"[!] Não é um arquivo válido (possivelmente diretório): {url}")
                 return
@@ -36,10 +34,8 @@ def baixar_arquivo(url, caminho_destino):
     except requests.RequestException as e:
         logger.error(f"Erro ao baixar {url}: {e}")
 
-# Função para verificar se o diretório .git está realmente exposto
 def verificar_git_exposto(url_base):
     try:
-        # Verificando se a URL base com o diretório .git retorna 200
         url_git = f"{url_base}/.git"
         resposta = requests.get(url_git, timeout=5)
         
@@ -54,7 +50,6 @@ def verificar_git_exposto(url_base):
         logger.error(f"Erro ao verificar {url_base}: {e}")
         return False
 
-# Função para baixar todos os arquivos do repositório
 def baixar_git_repo(url_base, arquivos_git):
     with ThreadPoolExecutor(max_workers=10) as executor:
         futures = []
@@ -65,7 +60,6 @@ def baixar_git_repo(url_base, arquivos_git):
         for future in as_completed(futures):
             future.result()
 
-# Função principal que processa repositórios
 def processar_repositorios(repositorios):
     for url_base in repositorios:
         logger.info(f"Processando repositório: {url_base}")
@@ -112,7 +106,6 @@ def processar_repositorios(repositorios):
         else:
             logger.info(f"Repositório {url_base} não está exposto ou não contém arquivos .git")
 
-# Função principal para rodar o script
 def main():
     parser = argparse.ArgumentParser(description="Ferramenta para baixar arquivos de repositórios Git expostos")
     parser.add_argument("url", help="URL do repositório Git exposto (ex: http://example.com/.git)", type=str)
